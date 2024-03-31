@@ -21,6 +21,11 @@ body{
 }
 
 /* Navigation Bar */
+
+.body{
+    margin-top: 50px;
+    overflow: hidden;
+}
 nav{
     float: right;
 }
@@ -57,6 +62,7 @@ nav ul {
     margin: 30px;
     margin-top:90px;
     background-color: #FEC9C7;
+    filter: drop-shadow(10px 0px 4px black);
   }
   
 .rankings{
