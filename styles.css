@@ -49,7 +49,7 @@ nav ul {
     color: black;
     font-size: 18px;
     background-color: #FEC9C7 ;
-    filter: drop-shadow(10px 0px 4px black);
+    filter: drop-shadow(10px 5px 4px black);
   }
   
   nav ul li a:hover {
@@ -62,7 +62,7 @@ nav ul {
     margin: 30px;
     margin-top:90px;
     background-color: #FEC9C7;
-    filter: drop-shadow(10px 0px 4px black);
+    filter: drop-shadow(10px 5px 4px black);
   }
   
 .rankings{
