@@ -1,5 +1,8 @@
 h1{
     color: #CD88CC;
+    font-family: baileywick-jf-gothic, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 
 }
 
@@ -64,7 +67,21 @@ nav ul {
     background-color: #FEC9C7;
     filter: drop-shadow(10px 5px 4px black);
   }
+  /* Main Page */
+  .summary{
+    width: 50vw;
+  }
+
   
+
+  .quote{
+    padding-left: 50px;
+  }
+
+  /* Awards Page */
 .rankings{
-        list-style-type: "⭐ ";
+    text-align: center;
+    align-content: center;
+    list-style-position: inside;
+    list-style-type: "⭐ ";
     }
