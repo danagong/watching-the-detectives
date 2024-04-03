@@ -3,7 +3,7 @@ h1{
     font-family: baileywick-jf-gothic, sans-serif;
     font-weight: 400;
     font-style: normal;
-
+    margin: 30px;
 }
 
 body{
@@ -13,6 +13,11 @@ body{
 #header{
     width: 50vw;
 }
+
+img.tooltip{
+  float:right;
+}
+
 .blurred{
     background-image: url('imgs/backgroundfooter.jpg');
     float: left;
@@ -65,7 +70,7 @@ nav ul {
     margin: 30px;
     margin-top:90px;
     background-color: #FEC9C7;
-    filter: drop-shadow(10px 5px 4px black);
+    box-shadow: 10px 7px 10px black;
   }
   /* Main Page */
   .summary{

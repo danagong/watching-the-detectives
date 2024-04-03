@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Watching the Detectives (2007) Official Fan Club</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="stylesheet" href="https://use.typekit.net/usb2wso.css">
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- <img id = "header" src="imgs/title.png" alt="background"> -->
-    
-    <h1 class="site-title">Welcome to the Official Watching the Detectives Fan Club HQ!</h1>
 
-    <div class = "body"> 
+<head>
+  <meta charset="UTF-8" />
+  <title>Watching the Detectives (2007) Official Fan Club</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="https://use.typekit.net/usb2wso.css">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<script>
+
+  var tooltips = document.querySelectorAll('.tooltip span');
+
+  window.onmousemove = function (e) {
+    var x = (e.clientX + 20) + 'px',
+      y = (e.clientY + 20) + 'px';
+    for (var i = 0; i < tooltips.length; i++) {
+      tooltips[i].style.top = y;
+      tooltips[i].style.left = x;
+    }
+  };
+</script>
+
+<body>
+  <!-- <img id = "header" src="imgs/title.png" alt="background"> -->
+
+  <h1 class="site-title">Welcome to the Official Watching the Detectives Fan Club HQ!</h1>
+
+  <div class="body">
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -24,26 +39,66 @@
 
 
 
-    <div class = "main">
-      <div class = "summary">
-      <p>A brief summary does this film no good, but we will attempt: video store owner Neil (our fav Cillian Murphy) "an incorrigible prankster and film noir buff" 
-        breaks up with his girlfriend citing her lack of similarity to Katherin Ross in "Butch Cassidy and the Sundance Kid."
-        She tells him to get over his silly little life pretending to live in the movies through running an unprofitable video store.
-        In walks Violet (also our fav Lucy Liu), a modern day femme fatale who "starts to lead Neil down a road of petty crime."
-        Curiosity killed the cat they said. But it probably wouldn't kill Neil to live in the moment, and Neil is not a cat.
-      </p>
-      <div class = "quote">
-      <p> <strong>Neil: </strong>What are doing to me, Violet? Why are you doing this? Why are you like this?
-          <br>
-          <strong>Violet:</strong> Because I really like you.
-      </p>
+    <div class="main">
+      <div class="summary">
+        <p>A brief summary does this film no good, but we will attempt: video store owner <a class="tooltip">Neil (our
+            fav Cillian Murphy)<span>
+              <img class="tooltip" alt="" src="./assets/thumbsup.gif" />
+            </span></a> "an incorrigible prankster and film noir buff"
+          breaks up with his girlfriend citing her lack of similarity to Katherin Ross in "Butch Cassidy and the
+          Sundance Kid."
+          She tells him to get over his silly little life pretending to live in the movies through running an
+          unprofitable video store.
+          In walks <a class="tooltip">Violet (also our fav Lucy Liu)<span><img class="tooltip" alt=""
+                src="http://www.google.com/images/srpr/logo4w.png" /></span></a>, a modern day femme fatale who "starts
+          to lead Neil down a road of petty crime."
+          Curiosity killed the cat they said. But it probably wouldn't kill Neil to live in the moment, and Neil is not
+          a cat.
+        </p>
+        <div class="quote">
+          <p> <strong>Neil: </strong>What are doing to me, Violet? Why are you doing this? Why are you like this?
+            <br>
+            <strong>Violet:</strong> Because I really like you.
+          </p>
+        </div>
+
+      </div>
+
     </div>
-
   </div>
+  <!-- <img class = "blurred" src="imgs/backgroundfooter.jpg" alt="background"> -->
+</body>
 
+<style>
+  .tooltip {
+    text-decoration: underline;
+    position: relative;
+    filter: none;
+    cursor: pointer;
+  }
 
-    </div>
-  </div>
-    <!-- <img class = "blurred" src="imgs/backgroundfooter.jpg" alt="background"> -->
-  </body>
+  .tooltip.a {
+    cursor: pointer;
+  }
+
+  .tooltip span {
+    display: none;
+    cursor: pointer;
+
+  }
+
+  .tooltip:hover span {
+    display: block;
+    position: fixed;
+    overflow: hidden;
+    z-index: 99;
+    margin-left: 20%;
+    cursor: pointer;
+  }
+
+  .tooltip img {
+    z-index: 99;
+  }
+</style>
+
 </html>
